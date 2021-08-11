@@ -1,0 +1,62 @@
+<div class="root">
+
+    <div class="title">
+        <h1>添加</h1>
+    </div>
+
+    <div class="back">
+        <mat-icon
+        (click)="_r.navigateByUrl('/')"
+        >arrow_back_ios</mat-icon>
+    </div>
+
+    <div class="form-cont">
+
+        <form
+        
+
+      [formGroup]="myForm"
+        
+        >
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>New Task</mat-label>
+            <input
+            autocomplete="off"
+            matInput placeholder="New Task" value=""
+            formControlName="desc"
+            >
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>House Member</mat-label>
+            <mat-select
+            formControlName="workerId"
+            >
+              <mat-option *ngFor="let member of _tasks.houseMembers" [value]="member._id"
+              >
+                {{member.name}},
+                {{member.nick}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <button mat-raised-button color="primary"
+          (click)="addTask()"
+          >Add Task</button>
+
+          <div class="suucess-div">
+            {{successDivMessage}}
+          </div>
+
+
+          <!-- {{myForm.value |json}} -->
+
+
+    
+    </form>
+
+
+    </div>
+
+
+</div>

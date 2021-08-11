@@ -1,0 +1,26 @@
+<div class="root">
+
+    <div class="title">
+        <h1>任务</h1>
+    </div>
+
+    <div class="plus">
+        <mat-icon
+        (click)="_r.navigateByUrl('/add')"
+        >add</mat-icon>
+    </div>
+    
+    
+    <mat-grid-list class="list" cols="2" rowHeight="2:1">
+
+        <mat-grid-tile
+        *ngFor="let task of _tasks.allTasks"
+        >
+            <app-task-unit
+            [task]="task"
+            ></app-task-unit>
+        </mat-grid-tile>
+
+    </mat-grid-list>
+
+</div>

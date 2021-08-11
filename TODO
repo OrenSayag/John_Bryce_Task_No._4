@@ -1,0 +1,40 @@
+------------ DONE
+create mongo models - HouseMembers, Tasks
+create MONGO DEFAULTS (func init)
+create API
+create models for ts
+    task
+    member
+
+
+create ser Only
+    hetHomeMembers
+    getTodoList
+    addTodoUnit
+    delTodoUnit
+
+
+
+------------ TODO
+
+create components
+    list
+    add
+
+route
+
+
+fill up components
+    list
+    add
+
+style
+
+extras:
+    each member gets a default color which changes his card color
+        edit module in mongoose
+        edit module in ts
+        edit values in compass
+        implement ngStyle at units
+        test re-creation
+ 

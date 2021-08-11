@@ -1,0 +1,41 @@
+.root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    position: relative;
+}
+
+.title{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid linen;
+    width: 175px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.plus {
+    position: absolute;
+    left: 75px;
+    top: 75px;
+}
+
+.plus > * {
+    font-size: 50px;
+}
+
+.list {
+    /* border: 1px solid rgba(255,255,255,.6); */
+    width: 100%;
+    border-radius: 3px;
+}
+
+app-task-unit {
+    height: 90%;
+    width: 90%;
+}
